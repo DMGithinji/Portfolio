@@ -1,0 +1,72 @@
+
+  .card-header {
+    padding: 10px 25px;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Quicksand", Arial, sans-serif;
+    color: #fff;
+    background-color: none;
+    position: relative;
+    // border-bottom: 1px solid #aaa !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    margin-top: 1em;
+ }
+  
+  .card {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+
+}
+  .btn{
+    text-decoration: none !important;
+    color: #2684d1;
+    font-weight: 600;
+
+    
+  }
+  .card-header a:after {
+
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    top: 50%;
+    line-height: 1;
+    margin-top: -7px; }
+  
+  
+  .card-header .btn.collapsed {
+    color: #777;
+ }
+  
+  .card-body {
+    padding: 1.5em;
+    margin-top: 5px;
+    border: 1px solid #e6e6e6 !important;
+    // border-top: 1px solid #2c98f0 !important;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+
+@media screen and (max-width: 768px) {
+  .colorlib-narrow-content {
+    padding: 1em;
+  }
+}

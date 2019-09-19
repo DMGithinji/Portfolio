@@ -1,0 +1,28 @@
+.work-menu {
+
+  span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.work-menu span:first-child {
+  margin-left: 0;
+}
+
+.work-menu span a {
+  color: #000;
+  text-decoration: none;
+}
+
+.content {
+  height: 150px;
+}
+
+.active {
+  color: #2c98f0;
+}
