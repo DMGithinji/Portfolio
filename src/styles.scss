@@ -1,8 +1,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 body {
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
@@ -41,8 +41,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #333;
+  font-family: "Lato", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }

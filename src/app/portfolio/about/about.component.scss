@@ -1,3 +1,19 @@
+$blue: #7a7fd3;
+$light-blue: #2c98f0;
+h2::after {
+  background: $light-blue;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  bottom: -20px;
+  width: 100px;
+  @media(max-width: 768px) {
+    left: calc(50% - 50px);
+    margin: 0 auto;
+
+  }
+}
 .work-menu {
 
   span {
