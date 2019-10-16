@@ -1,3 +1,28 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+
+
+$blue: rgb(59, 109, 136);
+$dark-blue: #2c98f0;
+$darkest-blue: rgb(59, 60, 100);
+$darker-blue: rgb(63, 66, 105);
+$dark-blue:rgb(104, 117, 240);
+
+h2::after {
+  background: $dark-blue;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  bottom: -20px;
+  width: 100px;
+  @media(max-width: 768px) {
+    left: calc(50% - 50px);
+    margin: 0 auto;
+  }
+}
+
+
 .colorlib-skills {
   padding-top: 4em;
   padding-bottom: 9em;
@@ -50,7 +75,7 @@
   border-bottom: 2px solid #ec5453;
 }
 
-.services.color-2 .icon2 i {
+.services.color-6 .icon2 i {
   color: #ec5453;
 }
 
@@ -255,16 +280,20 @@
   border-radius: 50%;
 }
 
-.colorlib-counters .counter-wrap {
-  border: 1px solid red !important;
-}
+// .colorlib-counters .counter-wrap {
+//   border: 1px solid red !important;
+// }
 
 .colorlib-counters .colorlib-counter {
-  font-size: 40px;
+  font-size: 30px;
   display: block;
   color: white;
-  font-family: "Quicksand", Arial, sans-serif;
+  font-family: 'Ubuntu Mono', monospace, sans-serif;
+
+  // font-family: "Quicksand", Arial, sans-serif;
   width: 100%;
-  font-weight: 700;
-  margin-bottom: .3em;
+  font-weight: 400;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
 }
+

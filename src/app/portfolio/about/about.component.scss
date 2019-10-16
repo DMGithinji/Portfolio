@@ -1,7 +1,11 @@
-$blue: #7a7fd3;
-$light-blue: #2c98f0;
+$blue: rgb(59, 109, 136);
+$dark-blue: #2c98f0;
+$darkest-blue: rgb(59, 60, 100);
+$darker-blue: rgb(63, 66, 105);
+$dark-blue:rgb(95, 153, 192);
+
 h2::after {
-  background: $light-blue;
+  background: $dark-blue;
   content: '';
   height: 2px;
   left: 0;
@@ -11,34 +15,68 @@ h2::after {
   @media(max-width: 768px) {
     left: calc(50% - 50px);
     margin: 0 auto;
-
-  }
-}
-.work-menu {
-
-  span {
-    margin-left: 10px;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
   }
 }
 
-.work-menu span:first-child {
-  margin-left: 0;
+nav > .nav.nav-tabs{
+
+    border: none;
+    color:#fff;
+    background:$darker-blue;
+    // background: linear-gradient(320deg, $blue 0%, $dark-blue 100%);
+
+    border-radius:0;
+    margin-right: 20px;
+    @media(max-width: 768px) {
+      margin-right: 0px;
+    }
+
+}
+nav > div span.nav-item.nav-link
+{
+    border: none;
+    padding: 18px 20px;
+    color:#fff;
+    background: transparent;
+    border-radius:0;
 }
 
-.work-menu span a {
-  color: #000;
-  text-decoration: none;
+nav > div span.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -15%;
+  border: 15px solid transparent;
+  border-top-color: $dark-blue;
+  @media(max-width: 768px) {
+    left: -40%;
+  }
 }
 
-.content {
-  height: 150px;
+.tab-content{
+    background: #fdfdfd;
+    line-height: 25px;
+    margin-right: 20px;
+    border-top:5px solid $dark-blue;
+    // border-bottom:5px solid $dark-blue;
+    // border: 1px solid #ddd;
+    @media(max-width: 768px) {
+      margin-right: 0px;
+    }
 }
 
-.active {
-  color: #2c98f0;
+nav > div span.nav-item.nav-link:hover,
+nav > div span.nav-item.nav-link:focus
+{
+  background: $darkest-blue;
+  cursor: pointer;
+  color:#fff;
+  transition:background 0.20s linear;
+}
+
+p{
+  @media(min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }

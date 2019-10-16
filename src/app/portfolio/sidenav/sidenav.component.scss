@@ -1,6 +1,6 @@
-$blue: #545bc4;
-
-
+$blue: rgba(84, 156, 196);
+$light-blue: #2c98f0;
+$dark-blue: #272e38;
 .author-img {
   background-size: cover;
   background-position: center center;
@@ -202,12 +202,13 @@ $blue: #545bc4;
 #colorlib-aside .colorlib-footer ul li a:focus {
   text-decoration: none;
   outline: none;
-  color: #2c98f0;
+  color: #7992a7;
 }
 
 .colorlib-nav-toggle {
   cursor: pointer;
-  background-color: $blue;
+  background-color: $dark-blue;
+  // border: 2px solid $blue;
   border-radius: 50%;
 
   text-decoration: none;
@@ -279,19 +280,19 @@ $blue: #545bc4;
 }
 
 .colorlib-nav-toggle i::before {
-  top: -7px;
+  top: -6px;
 }
 
 .colorlib-nav-toggle i::after {
-  bottom: -7px;
+  bottom: -6px;
 }
 
 .colorlib-nav-toggle:hover i::before {
-  top: -10px;
+  top: -8px;
 }
 
 .colorlib-nav-toggle:hover i::after {
-  bottom: -10px;
+  bottom: -8px;
 }
 
 .colorlib-nav-toggle.active i {

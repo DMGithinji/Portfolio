@@ -1,46 +1,78 @@
 <section class="colorlib-about" data-section="about">
-    <div class="colorlib-narrow-content">
+  <div class="colorlib-narrow-content">
 
-  <div class="row">
-    <div class="container-fluid">
-      <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-        <div class="col-md-12">
-          <div class="about-desc">
-            <h2 class="colorlib-heading">Brief Intro</h2>
-            <p class="work-menu">
+    <div class="row">
+      <div class="container-fluid">
+        <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+          <div class="col-md-12">
+            <div class="about-desc">
+              <h2 class="colorlib-heading">Brief Intro</h2>
+              <!-- <p class="work-menu">
               <span (click)="showSummary()" [class.active]="summary">About</span>
               <span (click)="showCurrent()" [class.active]="current">Currently</span>
               <span (click)="showFuture()" [class.active]="seeking">Seeking</span>
-            </p>
+            </p> -->
+
+              <div class="row">
+                <div class="col-xs-12 ">
+                  <nav>
+                    <div class="nav nav-tabs nav-fill justify-content-between
+                    " (click)="showSummary()" id="nav-tab" role="tablist">
+                      <span class="nav-item nav-link active" id="nav-summary-tab" data-toggle="tab" href="#nav-summary"
+                        role="tab" aria-controls="nav-summary" aria-selected="true">Summary</span>
+                      <span class="nav-item nav-link" id="nav-current-tab" data-toggle="tab" href="#nav-current"
+                        (click)="showCurrent()" role="tab" aria-controls="nav-current"
+                        aria-selected="false">Current</span>
+                      <span class="nav-item nav-link" id="nav-seeking-tab" data-toggle="tab" href="#nav-seeking"
+                        (click)="showFuture()" role="tab" aria-controls="nav-seeking"
+                        aria-selected="false">Seeking</span>
+                    </div>
+                  </nav>
+                  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-summary" role="tabpanel"
+                      aria-labelledby="nav-summary-tab">
+                      <p class="pt-4"> I am a full-stack software developer with an undergraduate degree in Mechatronic
+                        Engineering,
+                        a course that primarily focuses on automation of hardware systems. </p>
+                      <p>
+                        Throughout my studies, I was always an avid firmware (software for hardware) developer and this
+                        showed in the number of automation projects I undertook.
+                        On completion, I decided to further pursue my interest in programming and thus my journey into
+                        software development began.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-current" role="tabpanel" aria-labelledby="nav-current-tab">
+                      <p class="pt-4"> I recently (August, 2019) completed an intensive 6-month software development
+                        bootcamp
+                        (Moringa School), where I sharpened my skills in Python and Javascript programming.
+                        I am currently proficient in using Angular as a frontend framework and Django & Flask as backend
+                        frameworks. Some of the tech stacks I'm currently self-studying on are React and Node.</p>
+                      <p>
+                        <p>I am however open to taking up the challenge of learning new tech stacks based on the need.
+                          <em>Knowledge is power.</em></p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-seeking" role="tabpanel" aria-labelledby="nav-seeking-tab">
+                      <p class="pt-4">
+                        I am seeking a long-term role in a growing or established tech-based
+                        organization where I can exercise my eagerness to learn and expand my capabilities while
+                        contributing to meeting the organization's vision.
+                      </p>
+                      <p>
+                        Long-term, I find myself being drawn to software architecture, as I am developing a deep appreciation
+                        of code that is maintainable, reusable, scalable, performant and secure. I'm always striving to
+                        design and build projects with these traits at their core.</p>
+                      <p>Current Read: <em>Software Architecture with Python by Anand Balachandran Pillai</em></p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
-      <div *ngIf="summary" class="container-fluid content">
 
-        <p><strong>Hi I'm Denis Githinji</strong> On her way she met a copy. The copy
-          warned the Little Blind Text, that where it came from it would have been
-          rewritten a thousand times and everything that was left from its origin
-          would be the word "and" and the Little Blind Text should turn around and
-          return to its own, safe country.</p>
-
-      </div>
-      <div *ngIf="current" class="container-fluid content">
-
-        <p>Little Blind Text should turn around and
-          return to its own, safe country. The blind texts it is
-          an almost unorthographic life One day however a small line of blind text
-          by the name of Lorem Ipsum decided to leave for the far World of
-          Grammar.</p>
-      </div>
-      <div *ngIf="seeking" class="container-fluid content">
-
-        <p>On her way she met a copy. The copy
-          warned the Little Blind Text, that where it came from it would have been
-          rewritten a thousand times and everything that was left from its origin
-          would be the word "and" and the Little Blind Text should turn around and
-          return to its own, safe country.</p>
       </div>
     </div>
   </div>
-</div>
 </section>
