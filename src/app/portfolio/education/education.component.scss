@@ -1,3 +1,25 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+$blue: rgb(59, 109, 136);
+$dark-blue: #2c98f0;
+$darkest-blue: rgb(59, 60, 100);
+$darker-blue: rgb(45, 47, 80);
+$dark-blue:rgb(104, 117, 240);
+
+h2::after {
+  background: $darker-blue;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  bottom: -20px;
+  width: 100px;
+  @media(max-width: 768px) {
+    left: calc(50% - 50px);
+    margin: 0 auto;
+  }
+}
 
   .card-header {
     padding: 10px 25px;
@@ -7,7 +29,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "Quicksand", Arial, sans-serif;
+    // font-family: "Quicksand", Arial, sans-serif;
     color: #fff;
     background-color: none;
     position: relative;
@@ -31,7 +53,7 @@
 }
   .btn{
     text-decoration: none !important;
-    color: #2684d1;
+    color: rgb(34, 35, 49);
     font-weight: 600;
 
     

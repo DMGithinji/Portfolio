@@ -1,7 +1,7 @@
 $blue: rgb(59, 109, 136);
 $dark-blue: #2c98f0;
 $darkest-blue: rgb(59, 60, 100);
-$darker-blue: rgb(63, 66, 105);
+$darker-blue: rgb(77, 79, 100);
 $dark-blue:rgb(104, 117, 240);
 
 .project {
@@ -63,7 +63,7 @@ $dark-blue:rgb(104, 117, 240);
 }
 
 h2::after {
-  background: $dark-blue;
+  background: $darker-blue;
   content: '';
   height: 2px;
   left: 0;
@@ -71,7 +71,7 @@ h2::after {
   bottom: -20px;
   width: 200px;
   @media(max-width: 768px) {
-    left: calc(50% - 50px);
+    left: calc(50% - 100px);
     margin: 0 auto;
   }
 }

@@ -1,14 +1,14 @@
 $blue: rgb(59, 109, 136);
 $light-blue: #2c98f0;
 $darker-blue: #224672;
-$darkest-blue: #223347;
-$dark-blue:rgb(78, 81, 126);
+$darkest-blue: #174172;
+$dark-blue:rgb(107, 114, 218);
 
 
 .hero {
   background: $dark-blue;
-  background: linear-gradient(331deg, $blue 0%, $dark-blue 50%);
-  // background: linear-gradient(331deg, $dark-blue  0%, $darkest-blue 100%);
+  // background: linear-gradient(331deg, $blue 0%, $dark-blue 50%);
+  background: linear-gradient(331deg, $dark-blue  0%, $darkest-blue 100%);
   width: 102.3%;
   padding: 55px 15px 55px 15px;
   margin-left: -25px;

@@ -5,11 +5,11 @@
 $blue: rgb(59, 109, 136);
 $dark-blue: #2c98f0;
 $darkest-blue: rgb(59, 60, 100);
-$darker-blue: rgb(63, 66, 105);
 $dark-blue:rgb(104, 117, 240);
+$darker-blue: rgb(77, 79, 100);
 
 h2::after {
-  background: $dark-blue;
+  background: $darker-blue;
   content: '';
   height: 2px;
   left: 0;
@@ -24,8 +24,6 @@ h2::after {
 
 
 .colorlib-skills {
-  padding-top: 4em;
-  padding-bottom: 9em;
   clear: both;
   width: 100%;
   display: block;
@@ -287,13 +285,35 @@ h2::after {
 .colorlib-counters .colorlib-counter {
   font-size: 30px;
   display: block;
-  color: white;
+  color: green;
   font-family: 'Ubuntu Mono', monospace, sans-serif;
-
-  // font-family: "Quicksand", Arial, sans-serif;
   width: 100%;
   font-weight: 400;
-  margin-top: 1.3em;
-  margin-bottom: 1.3em;
+  // margin-top: 1em;
+  // margin-bottom: 1.3em;
 }
 
+.quote::after {
+  content: "";
+  // position: absolute;
+  bottom: 0;
+  margin-bottom: -0.25em;
+  display: inline-block;
+  background-color: green;
+  width: 10px;
+  height: 30px;
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

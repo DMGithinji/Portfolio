@@ -1,11 +1,12 @@
 $blue: rgb(59, 109, 136);
 $dark-blue: #2c98f0;
-$darkest-blue: rgb(59, 60, 100);
-$darker-blue: rgb(63, 66, 105);
+$darkest-blue: rgb(107, 108, 187);
+$light: #f2f3f7;;
 $dark-blue:rgb(95, 153, 192);
+$darker-blue: rgb(77, 79, 100);
 
 h2::after {
-  background: $dark-blue;
+  background: $darker-blue;
   content: '';
   height: 2px;
   left: 0;
@@ -21,8 +22,8 @@ h2::after {
 nav > .nav.nav-tabs{
 
     border: none;
-    color:#fff;
-    background:$darker-blue;
+    color:#333;
+    background:$light;
     // background: linear-gradient(320deg, $blue 0%, $dark-blue 100%);
 
     border-radius:0;
@@ -36,7 +37,7 @@ nav > div span.nav-item.nav-link
 {
     border: none;
     padding: 18px 20px;
-    color:#fff;
+    color:#333;
     background: transparent;
     border-radius:0;
 }
@@ -69,9 +70,9 @@ nav > div span.nav-item.nav-link.active:after
 nav > div span.nav-item.nav-link:hover,
 nav > div span.nav-item.nav-link:focus
 {
-  background: $darkest-blue;
+  // background: $darkest-blue;
   cursor: pointer;
-  color:#fff;
+  color:$dark-blue;
   transition:background 0.20s linear;
 }
 

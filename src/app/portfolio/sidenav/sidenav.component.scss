@@ -1,6 +1,8 @@
-$blue: rgba(84, 156, 196);
+$blue: rgb(59, 109, 136);
 $light-blue: #2c98f0;
-$dark-blue: #272e38;
+$darker-blue: #224672;
+$darkest-blue: #174172;
+$dark-blue:rgb(107, 114, 218);
 .author-img {
   background-size: cover;
   background-position: center center;
@@ -21,6 +23,7 @@ $dark-blue: #272e38;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -207,7 +210,7 @@ $dark-blue: #272e38;
 
 .colorlib-nav-toggle {
   cursor: pointer;
-  background-color: $dark-blue;
+  background-color: $darkest-blue;
   // border: 2px solid $blue;
   border-radius: 50%;
 

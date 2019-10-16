@@ -1,4 +1,25 @@
 
+$blue: rgb(59, 109, 136);
+$dark-blue: #2c98f0;
+$darkest-blue: rgb(59, 60, 100);
+$darker-blue: rgb(77, 79, 100);
+$dark-blue:rgb(104, 117, 240);
+
+h2::after {
+  background: $darker-blue;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  bottom: -20px;
+  width: 250px;
+  @media(max-width: 768px) {
+    left: calc(50% - 120px);
+    margin: 0 auto;
+  }
+}
+
+
 .timeline-centered {
     position: relative;
     margin-bottom: 30px; }
