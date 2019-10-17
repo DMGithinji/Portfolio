@@ -1,3 +1,4 @@
+import { ScrollSpyDirective } from './directives/scroll-spy.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,7 @@ import { ContactComponent } from './portfolio/contact/contact.component';
   declarations: [
     AppComponent,
     ContactComponent,
-
+    ScrollSpyDirective,
   ],
   imports: [
     BrowserModule,
