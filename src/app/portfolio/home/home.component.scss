@@ -9,10 +9,10 @@ $dark-blue:rgb(107, 114, 218);
   background: $dark-blue;
   // background: linear-gradient(331deg, $blue 0%, $dark-blue 50%);
   background: linear-gradient(331deg, $dark-blue  0%, $darkest-blue 100%);
-  width: 102.3%;
+  // width: 102.3%;
   padding: 55px 15px 55px 15px;
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: -10px;
+  margin-right: -20px;
   @media (max-width: 768px) {
     width: 110%;
   }

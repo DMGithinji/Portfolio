@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { EducationComponent } from './education/education.component';
     SkillsComponent,
     EducationComponent,
     ExperiencesComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -37,6 +39,8 @@ import { EducationComponent } from './education/education.component';
     SkillsComponent,
     EducationComponent,
     ExperiencesComponent,
+    FooterComponent,
+
 
     
   ],

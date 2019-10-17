@@ -1,0 +1,39 @@
+$blue: #2c98f0;
+$darkest-blue: rgb(107, 108, 187);
+$light: #f2f3f7;;
+$dark-blue:rgb(95, 153, 192);
+$darker-blue: rgb(77, 79, 100);
+
+
+#contact {
+  background-color: #F2F3F7;
+}
+
+#contact h2 {
+  color: $darker-blue;
+}
+.contact-social-icons{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: -10px;
+
+  }
+
+.contact-social-icons p {
+  color: $darker-blue;
+}
+
+.contact-social-icons ul a {
+  color: $darker-blue;
+  list-style: none;
+  margin: 0 30px;
+}
+
+.contact-social-icons ul a:hover {
+  color: $blue;
+}
+
+.contact-social-icons ul a li {
+  display: inline-block;
+  padding: 2%;
+}

@@ -8,6 +8,7 @@ body {
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7);
   margin: 0;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -77,8 +78,15 @@ h6 {
   padding-top: 4em;
   padding-bottom: 6.5em;
   clear: both;
-  width: 100%;
+  margin-left: 0px;
   display: block;
+  // margin-right: -20px;
+padding-left: 30px;
+  @media screen and (max-width: 768px) {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,16 @@
+$blue: #2c98f0;
+$darkest-blue: rgb(107, 108, 187);
+$light: #f2f3f7;;
+$dark-blue:rgb(95, 153, 192);
+$darker-blue: rgb(77, 79, 100);
+
+
+::-webkit-scrollbar {
+  display: none;
+  }
+  
 .portfolio-main {
-  width: calc(100% - 300px);
+  width: calc(100% - 290px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -13,10 +24,6 @@
     overflow-y: scroll;
   }
 }
-
-::-webkit-scrollbar {
-  display: none;
-  }
 
 /*---------Side Nav Starts Here--------*/
 
@@ -449,3 +456,29 @@ $darkest-blue: rgb(42, 42, 42, 0.5);
 
 
 /*-----Side Nav Ends Here ----------*/
+
+.contact-social-icons{
+  width: 100%;
+  margin-top: 30px;
+  font-size: 25px;
+
+}
+
+.contact-social-icons i{
+  font-size: 16px;
+
+}
+
+.contact-social-icons p {
+color: $darker-blue;
+}
+
+.contact-social-icons ul a {
+color: $darker-blue;
+list-style: none;
+margin: 0 30px;
+}
+
+.contact-social-icons ul a:hover {
+color: $blue;
+}

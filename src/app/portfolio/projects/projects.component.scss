@@ -1,66 +1,35 @@
 $blue: #2c98f0;
 $darkest-blue: rgb(59, 60, 100);
-$darker-blue: rgb(77, 79, 100);
 $dark-blue:rgb(104, 117, 240);
+$darker-blue: rgb(77, 79, 100);
 
-.project {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 300px;
+body {
+  background-color: #F2F3F7;
+  // margin-left: -18px;
   width: 100%;
-  display: block;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 40px;
+  @media(max-width: 768px) {
+    margin-right: -5px;
+}
+  .large{
+    display: block;
+
+    @media(max-width: 768px) {
+      display: none;
+  }
+  }
+  .small{
+    display: none;
+
+    @media(max-width: 768px) {
+      display: block;
+  }
+  }
 }
 
-.project .desc {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #2c98f0;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.project .desc .con {
-  padding: 20px;
-  display: block;
-  position: relative;
-  height: 300px;
-}
-
-.project .desc .con .icon {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-}
-
-.project .desc .con .icon span {
-  display: inline;
-  padding-right: 5px;
-}
-
-.project .desc .con .icon span a {
-  color: #333333;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.project .desc .con .icon i {
-  font-size: 16px;
-  color: #333333;
-}
+// h2{
+//   margin-bottom: -10px;
+// }
 
 h2::after {
   background: $blue;
@@ -69,118 +38,159 @@ h2::after {
   left: 0;
   position: absolute;
   bottom: -20px;
-  width: 200px;
+  width: 100px;
+
   @media(max-width: 768px) {
-    left: calc(50% - 100px);
+    left: calc(50% - 50px);
     margin: 0 auto;
   }
 }
-.project .desc h3 {
-  font-family: "Quicksand", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, -15px, 0);
-  transform: translate3d(0, -15px, 0);
-  margin-bottom: 15px;
+
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project .desc h3 a {
-  color: #fff;
+.break {
+  clear: both;
+  margin-top: 10px;
 }
 
-.project .desc h4 {
-  display: block;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, 15px, 0);
-  transform: translate3d(0, 15px, 0);
-}
-
-.project .desc span {
-  display: block;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  -o-transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: translate3d(0, 15px, 0);
-  transform: translate3d(0, 15px, 0);
-}
-
-.project .desc span a {
-  color: #000;
-}
-
-@media screen and (max-width: 768px) {
-  .project .desc {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.4);
+@media (min-width: 768px) {
+  .pull-right-sm {
+    float: right !important;
   }
 
-  .project .desc h3 {
-    font-style: 28px;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    color: #000;
-  }
-
-  .project .desc span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  .pull-left-sm {
+    float: left !important;
   }
 }
 
-.project:hover .desc {
-  opacity: 1;
+@media (min-width: 992px) {
+  .pull-right-md {
+    float: right !important;
+  }
+
+  .pull-left-md {
+    float: left !important;
+  }
 }
 
-.project:hover .desc h3 {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+@media (min-width: 1200px) {
+  .pull-right-lg {
+    float: right !important;
+  }
+
+  .pull-left-lg {
+    float: left !important;
+  }
 }
 
-.project:hover .desc span {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+* {
+  box-sizing: border-box;
 }
 
-.btn-load-more {
+
+img {
   width: 100%;
 }
 
-.project-menu {
 
-  span {
-    margin-left: 10px;
-    cursor: pointer;
-  }
+p {
+  color: #424242;
+  font-size: 15px;
+}
 
-  @media screen and (max-width: 768px) {
-    text-align: center;
+.portfolio-projects--title::after {
+  background: $blue;
+  margin-top: 1.8em;
+  content: '';
+  height: 2px;
+  // left: calc(30%-100px);
+  left: 40%;
+  position: absolute;
+  width: 100px;
+
+  @media(max-width: 768px) {
+    left: calc(50% - 50px);
+    // margin: 0 auto;
   }
 }
 
-.active {
-  color: #2c98f0;
+.container-fluid .text-muted {
+  margin: 20px 40px;
+}
+
+.btn:focus,
+a:focus {
+  outline: none !important;
 }
 
 
+@media screen and (min-width: 768px) {
+  .portfolio-projects {
+    margin-top: 0.625em;
+    margin: 0 auto;
+  }
+}
 
-/*--------------------------------------------------------*/
+.portfolio-projects--title {
+  margin-top: 0.9375em;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects--title {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-projects--title {
+    margin-top: 5%;
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .portfolio-projects--desc {
+//     margin-top: 10%;
+//     margin-bottom: 10%; } }
+.portfolio-projects--btn {
+  font-size: 14px;
+  background: transparent;
+  color: #07374a;
+  border: 1px solid #07374a;
+  border-radius: 20px;
+  margin-bottom: 1.25em;
+  @media(max-width: 320px) {
+    font-size: 13px;  }
+
+}
+
+.btn2{
+  margin-right: 20px;
+  @media screen and (max-width: 325px) {
+    margin-right: 0;
+  }
+}
+
+.portfolio-projects--btn:hover {
+  background: #07374a;
+  color: #f0f0e6;
+}
+
+.portfolio-projects--image {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 70%;
+  border: solid 10px #141418;
+  border-radius: 5px;
+}
+
+
+.desc {
+  padding: 40px;
+  padding-top: 0;
+  margin: 0 auto;
+}

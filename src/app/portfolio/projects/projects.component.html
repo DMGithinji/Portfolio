@@ -1,87 +1,135 @@
-<section class="colorlib-work" data-section="work">
-    <div class="colorlib-narrow-content">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-                data-animate-effect="fadeInLeft">
-                <h2 class="colorlib-heading animate-box">Projects I've Done</h2>
+<body  class="colorlib-projects" data-section="projects">
+  <!-- Fixed navbar -->
+
+  <!-- Begin page content -->
+  <div class="container-fluid colorlib-narrow-content">
+      <!-- <h2 class="colorlib-heading">Projects</h2> -->
+
+
+    <div id="portfolio" class="row cover">
+      <div class="container  mb-5">
+        <div class="row portfolio-projects">
+          <!-- Two project row-->
+          <div class=" col-md-12 mt-4">
+
+            <!--1st side project -->
+            <div class="row">
+              <div class="col-md-6 text-center desc">
+                <h4 class="portfolio-projects--title">Prop-Tech</h4>
+                <p class="portfolio-projects--desc">Property Management Web App</p>
+                <p class="portfolio-projects--desc">Tech Stack: Javascript, Python, Angular, Django.</p>
+                <!-- <p class="portfolio-projects--desc">Role: Authentication (Backend & Frontend) & Frontend UI and
+                  consuming APIs.</p> -->
+                <a class="btn btn-rounded portfolio-projects--btn btn2" data-toggle="tooltip" data-placement="bottom" title="Version one" href="https://dmgithinji.github.io/PropTech/prop-tech/(content:dashboard)"
+                  role="button">View Project (V1)</a>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://proptech-smart-real-estate.web.app/#/dashboard/management-admin"
+                  role="button" data-toggle="tooltip" data-placement="bottom" title="Work in progress">View Project (V2)</a>
+              </div>
+              <div class="col-md-6 text-center">
+                <img class="portfolio-projects--image align-self-center" src="/assets/images/proptech.png">
+              </div>
             </div>
+          </div>
+          
+          <div class=" col-md-12">
+            <hr class="m-4">
+            <!--2nd side project -->
+            <div class="row">
+                <div class="col-md-6 text-center  desc small">
+                    <!--flipped on small, unflipped on large-->
+                    <h4 class="portfolio-projects--title">Path Finder</h4>
+                    <p class="portfolio-projects--desc">A visualization of the Dijkstra's Algorithm as applied in path
+                      finding.</p>
+                    <p class="portfolio-projects--desc col-md-push-6">Tech Stack: Javascript, React</p>
+                    <a class="btn btn-rounded portfolio-projects--btn btn2" href="https://reactpathfinder1.firebaseapp.com/"
+                      role="button">View Project</a>
+                      <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/DMGithinji/PathFinder-React"
+                      role="button">View Code</a>
+                  </div>
+              <div class="col-md-6 text-center">
+                <!--flipped on small, unflipped on large-->
+                <img class="img-rounded portfolio-projects--image"
+                  src="/assets/images/pathfinder.png">
+              </div>
+              <div class="col-md-6 text-center  desc large">
+                <!--flipped on small, unflipped on large-->
+                <h4 class="portfolio-projects--title">Path Finder</h4>
+                <p class="portfolio-projects--desc">A visualization of the Dijkstra's Algorithm as applied in path
+                  finding.</p>
+                <p class="portfolio-projects--desc col-md-push-6">Tech Stack: Javascript, React</p>
+                <a class="btn btn-rounded portfolio-projects--btn btn2" href="https://reactpathfinder1.firebaseapp.com/"
+                  role="button">View Project</a>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/DMGithinji/PathFinder-React"
+                  role="button">View Code</a>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <!-- <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-            <div class="col-md-12">
-                <p class="project-menu">
-                    <span (click)="showGeneral()" [class.active]="general"> General</span>
-                    <span (click)="showFrontend()" [class.active]="frontend">Frontend</span> 
-                    <span (click)="showBackend()" [class.active]="backend">Backend</span>
-                </p>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                <div class="project" style="background: url(./assets/images/proptech.png);">
-                    <div class="desc">
-                        <div class="con">
-                            <h3><a href="work.html">Property Management Web App</a></h3>
-                            <span>A web application built in Django and Angular for real estate management, built in a team of 3.</span>
-                            <h4>Achievements</h4>
-                            <span>Built and implemented the user authentication and authorization on the frontend application.</span>
-                            <span>Consumed the backend APIs for tenant management.</span>
-                            <span>Built the UI of the application.</span>
-                            <i class="fa fa-eye"> (Version 1)</i>
-                            <i class="fa fa-eye">(Version 2)</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                <div class="project" style="background-image: url(./assets/images/pathfinder.png);">
-                    <div class="desc">
-                        <div class="con">
-                            <h3><a href="work.html">Path Finder Visualizer</a></h3>
-                            <span>Brief Description</span>
-                            <span>View Code</span>
-                            <span>Visit Site</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-                <div class="project" style="background-image: url(./assets/images/img-3.jpg);">
-                    <div class="desc">
-                        <div class="con">
-                            <h3><a href="work.html">Foodiez Web App</a></h3>
-                            <span>Brief Description</span>
-                            <span>View Code</span>
-                            <span>Visit Site</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!--end Two project row-->
 
-            <div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-                    <div class="project" style="background-image: url(./assets/images/img-3.jpg);">
-                        <div class="desc">
-                            <div class="con">
-                                <h3><a href="work.html">Pixelbay</a></h3>
-                                <span>Brief Description</span>
-                                <span>View Code</span>
-                                <span>Visit Site</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row portfolio-projects">
+          <!-- Opposite Two project row-->
+          <div class=" col-md-12">
+            <hr class="m-4">
+            <!--1st side project -->
+            <div class="row">
+              <div class="col-md-6 text-center  desc">
+                <h4 class="portfolio-projects--title">Foodies</h4>
+                <p class="portfolio-projects--desc">A web application where users can view restaurants, view their menus
+                  and order</p>
+                <p class="portfolio-projects--desc">Tech Stack: Javascript, Angular, Flask.</p>
+                <a class="btn btn-rounded portfolio-projects--btn btn2" href="https://foodiez.netlify.com/"
+                  role="button">View Project</a>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/DMGithinji/Foodiez"
+                  role="button">View Code</a>
+              </div>
+              <div class="col-md-6 text-center">
+                <img class="img-rounded portfolio-projects--image"
+                src="/assets/images/foodiez.png">
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-12">
+            <hr class="m-4">
+            <!--2nd side project -->
+            <div class="row">
+                <div class="col-md-6 text-center  desc small">
+                    <!--flipped on small, unflipped on large-->
+                    <h4 class="portfolio-projects--title">Not Pinterest</h4>
+                    <p class="portfolio-projects--desc">A recreation of Pinterest, with the added feature of bookmarking
+                      images from third party websites.</p>
+                    <p class="portfolio-projects--desc">Tech Stack: Python, Django, Bootstrap</p>
+                    <a class="btn btn-rounded portfolio-projects--btn btn2" href="https://pinterest-clone-application.herokuapp.com/"
+                      role="button">View Project</a>
+                      <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/DMGithinji/Pinterest-clone"
+                      role="button">View Code</a>
+                  </div>
+              <div class="col-md-6 text-center pull-right-md">
+                <!--flipped on small, unflipped on large-->
+                <img class="img-rounded portfolio-projects--image"
+                  src="https://sonorangirl.github.io/img/slice-simon.png">
+              </div>
+              <div class="col-md-6 text-center  desc large">
+                <!--flipped on small, unflipped on large-->
+                <h4 class="portfolio-projects--title">Not Pinterest</h4>
+                <p class="portfolio-projects--desc">A recreation of Pinterest, with the added feature of bookmarking
+                  images from third party websites.</p>
+                <p class="portfolio-projects--desc">Tech Stack: Python, Django, Bootstrap</p>
+                <a class="btn btn-rounded portfolio-projects--btn btn2" href="https://pinterest-clone-application.herokuapp.com/"
+                  role="button">View Project</a>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://github.com/DMGithinji/Pinterest-clone"
+                  role="button">View Code</a>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-md-12 animate-box">
-                <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
-                            class="icon-reload"></i></a></p>
-            </div>
-        </div> -->
+        <!--end Opposite Two project row-->
 
-
-        
+      </div>
     </div>
-</section>
+  </div><!-- End #Portfolio -->
 
 
-
-
+</body>

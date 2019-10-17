@@ -3,7 +3,7 @@
     data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 
 
-  <aside id="colorlib-aside" [ngClass]="{offcanvas: navActive}" role="complementary" class="js-fullheight">
+  <aside id="colorlib-aside" [ngClass]="{offcanvas: navActive}" role="complementary">
     <div class="text-center">
       <div class="author-img" style="background-image: url(./assets/images/Denis_Githinji.jpg);"></div>
       <h1 id="colorlib-logo"><a href="index.html">Denis Githinji</a></h1>
@@ -24,8 +24,24 @@
           ><span data-nav-section="education">Education</span></li>
           <li (click)="scrollTo('section6')" [ngClass]="{ 'active': currentSection === 'section6' }">
               <span data-nav-section="experience">Previous Experience</span></li>
+              
           <!-- <li (click)="scrollTo('section7')" [ngClass]="{ 'active': currentSection === 'section7' }" ><a href="#" data-nav-section="contact">Contact</a></li> -->
         </ul>
+
+        <div class="text-center contact-social-icons">
+            <ul class="d-flex justify-content-center">
+              <a href="mailto:dmwaigithinji@gmail.com" class="m-2">
+                <li><i class="fa fa-envelope"></i> </li>
+              </a>
+              <a href="https://www.linkedin.com/in/githinji-mwai-9a207099 " class="m-2">
+                <li><i class="fa fa-linkedin-square"></i> </li>
+              </a>
+              <a href="https://github.com/DMGithinji" class="m-2">
+                <li><i class="fa fa-github"></i> </li>
+              </a>
+            </ul>
+        
+          </div>
       </div>
     </nav>
 
@@ -47,7 +63,7 @@
 
 
 
-<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" class="portfolio-main">
+<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" class="portfolio-main m-0">
   <div id="section1">
     <app-home></app-home>
   </div>
@@ -66,4 +82,7 @@
   <div id="section6">
     <app-experiences></app-experiences>
   </div>
+  <!-- <div id="section7">
+      <app-footer></app-footer>
+    </div> -->
 </div>
