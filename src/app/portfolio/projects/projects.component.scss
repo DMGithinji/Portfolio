@@ -1,5 +1,4 @@
-$blue: rgb(59, 109, 136);
-$dark-blue: #2c98f0;
+$blue: #2c98f0;
 $darkest-blue: rgb(59, 60, 100);
 $darker-blue: rgb(77, 79, 100);
 $dark-blue:rgb(104, 117, 240);
@@ -12,6 +11,7 @@ $dark-blue:rgb(104, 117, 240);
   height: 300px;
   width: 100%;
   display: block;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -63,7 +63,7 @@ $dark-blue:rgb(104, 117, 240);
 }
 
 h2::after {
-  background: $darker-blue;
+  background: $blue;
   content: '';
   height: 2px;
   left: 0;
@@ -94,6 +94,20 @@ h2::after {
 
 .project .desc h3 a {
   color: #fff;
+}
+
+.project .desc h4 {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
 }
 
 .project .desc span {
@@ -166,3 +180,7 @@ h2::after {
 .active {
   color: #2c98f0;
 }
+
+
+
+/*--------------------------------------------------------*/

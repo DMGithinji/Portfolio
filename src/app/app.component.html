@@ -1,26 +1,48 @@
-<!-- <div>
-    <app-sidenav></app-sidenav>
-    <div class="portfolio-main">
-    <app-home></app-home>
-    <app-about></app-about>
-    <app-projects></app-projects>
-    <app-skills></app-skills>
-    <app-education></app-education>
-    <app-experiences></app-experiences>
-    <app-contact></app-contact>
-    </div>
-</div>
-<div> -->
-<h1>Current Section : [{{currentSection}}]</h1>
+<div [ngClass]="{offcanvas: navActive}">
+  <a class="js-colorlib-nav-toggle colorlib-nav-toggle" (click)="navOn()" [ngClass]="{active: navActive}"
+    data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 
-<h2>Menu</h2>
-<div (click)="scrollTo('section1')" [ngClass]="{ 'current-section': currentSection === 'section1' }">Section 1
-</div>
-<div (click)="scrollTo('section2')" [ngClass]="{ 'current-section': currentSection === 'section2' }">Section 2
-</div>
-<div (click)="scrollTo('section3')" [ngClass]="{ 'current-section': currentSection === 'section3' }">Section 3
-</div>
-<div (click)="scrollTo('section4')" [ngClass]="{ 'current-section': currentSection === 'section4' }">Section 4
+
+  <aside id="colorlib-aside" [ngClass]="{offcanvas: navActive}" role="complementary" class="js-fullheight">
+    <div class="text-center">
+      <div class="author-img" style="background-image: url(./assets/images/Denis_Githinji.jpg);"></div>
+      <h1 id="colorlib-logo"><a href="index.html">Denis Githinji</a></h1>
+      <span class="position">Fullstack Software Developer</span>
+    </div>
+    <nav id="colorlib-main-menu" role="navigation" class="navbar">
+      <div id="navbar" class="collapse">
+        <ul>
+          <li (click)="scrollTo('section1')" [ngClass]="{ 'active': currentSection === 'section1' }">
+              <span data-nav-section="home">Home</span></li>
+          <li (click)="scrollTo('section2')" [ngClass]="{ 'active': currentSection === 'section2' }">
+              <span data-nav-section="about">About</span></li>
+          <li (click)="scrollTo('section3')" [ngClass]="{ 'active': currentSection === 'section3' }">
+              <span data-nav-section="work">Projects</span></li>
+          <li (click)="scrollTo('section4')" [ngClass]="{ 'active': currentSection === 'section4' }">
+              <span data-nav-section="services">Skills</span></li>
+          <li (click)="scrollTo('section5')" [ngClass]="{ 'active': currentSection === 'section5' }"
+          ><span data-nav-section="education">Education</span></li>
+          <li (click)="scrollTo('section6')" [ngClass]="{ 'active': currentSection === 'section6' }">
+              <span data-nav-section="experience">Previous Experience</span></li>
+          <!-- <li (click)="scrollTo('section7')" [ngClass]="{ 'active': currentSection === 'section7' }" ><a href="#" data-nav-section="contact">Contact</a></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <div class="colorlib-footer">
+            <p><small>&copy;
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+      
+                </script> All rights reserved
+              </small></p>
+            <ul>
+              <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+            </ul>
+          </div> -->
+
+  </aside>
+
 </div>
 
 

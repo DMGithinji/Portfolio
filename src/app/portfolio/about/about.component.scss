@@ -1,12 +1,11 @@
-$blue: rgb(59, 109, 136);
-$dark-blue: #2c98f0;
+$blue: #2c98f0;
 $darkest-blue: rgb(107, 108, 187);
 $light: #f2f3f7;;
 $dark-blue:rgb(95, 153, 192);
 $darker-blue: rgb(77, 79, 100);
 
 h2::after {
-  background: $darker-blue;
+  background: $blue;
   content: '';
   height: 2px;
   left: 0;

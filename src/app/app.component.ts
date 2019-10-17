@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   title = 'DMG-Portfolio';
-  currentSection = 'section1';
+  currentSection: string = 'section1';
+  navActive: boolean = false;
 
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
@@ -17,5 +18,12 @@ export class AppComponent {
   scrollTo(section) {
     document.querySelector('#' + section)
     .scrollIntoView();
+    this.navActive = false;
+
+  }
+
+  navOn(){
+    this.navActive = !this.navActive;
+    // console.log("Click!");
   }
 }
