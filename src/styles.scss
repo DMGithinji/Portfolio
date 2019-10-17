@@ -9,6 +9,7 @@ body {
   color: rgba(0, 0, 0, 0.7);
   margin: 0;
   overflow-x: hidden;
+  
 }
 
 @media screen and (max-width: 992px) {
@@ -83,8 +84,9 @@ h6 {
   // margin-right: -20px;
 padding-left: 30px;
   @media screen and (max-width: 768px) {
-    padding-left: 0px;
-    margin-left: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
   }
   
 }
