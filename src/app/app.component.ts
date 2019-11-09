@@ -14,16 +14,14 @@ export class AppComponent {
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
   }
-
+  
   scrollTo(section) {
     document.querySelector('#' + section)
     .scrollIntoView();
     this.navActive = false;
-
   }
 
   navOn(){
     this.navActive = !this.navActive;
-    // console.log("Click!");
   }
 }
