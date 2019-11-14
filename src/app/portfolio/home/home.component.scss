@@ -3,7 +3,7 @@ $light-blue: #2c98f0;
 $darker-blue: #224672;
 $darkest-blue: #174172;
 $dark-blue:rgb(107, 114, 218);
-
+$purplish: rgb(42, 35, 104);
 
 .hero {
   background: $dark-blue;
@@ -237,9 +237,11 @@ h1{
       margin-top: 40px;
       max-width: 420px;
       width: 100%;
-      background-color: rgb(42, 35, 104);
+      // background-color: rgb(42, 35, 104);
+      background:  linear-gradient(331deg, $dark-blue  0%, $purplish 100%);
+
       border-radius: 50%;
-      border: 0px solid rgba(162, 180, 231, 0.5);
+      // border: 0px solid rgba(162, 180, 231, 0.5);
     }
   }
 }
