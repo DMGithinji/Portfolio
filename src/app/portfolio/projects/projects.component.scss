@@ -9,10 +9,17 @@ body {
   margin-right: -8px;
   width: 102%;
   padding-top: 40px;
+
   @media(max-width: 768px) {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+}
+.heading{
+  padding-left: 30px;
+  @media(max-width: 768px) {
+    padding: 0;
+}
 }
   .large{
     display: block;

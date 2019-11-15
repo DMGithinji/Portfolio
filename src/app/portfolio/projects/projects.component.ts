@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
-
   backend: boolean = false;
   frontend: boolean = false;
   general: boolean = true;
@@ -17,13 +15,10 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
-  
-
   showGeneral=()=>{
     this.general=true;
     this.backend=false;
     this.frontend=false;
-
   }
   showFrontend=()=>{
     this.frontend=true;
