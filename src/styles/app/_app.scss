@@ -1,1 +1,27 @@
 /* Include additional global styling here */
+
+
+// Theme Font
+@import "themes/font/theme-font";
+
+// main framework
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "globals/theme-variables";
+
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// icon
+@import "themes/font/datta-icon";
+@import "themes/font/feather";
+@import "themes/font/fontawesome";
+@import "themes/font/cryptofont";
+
+// theme layouts
+@import "themes/layouts/menu-lite";
+@import '~@angular/material/theming';
+@include mat-core();
+
+// pages
+@import "themes/pages/authentication";

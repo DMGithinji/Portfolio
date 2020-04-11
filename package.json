@@ -46,17 +46,20 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "node-sass": "^4.13.1",
     "protractor": "~5.4.0",
+    "sass-loader": "^7.1.0",
     "standard-version": "^7.1.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "webpack": "^4.42.1"
   },
   "release": "standard-version && git push — follow-tags origin master && npm publish",
   "husky": {
     "hooks": {
       "pre-commit": "run-s format:check lint"
     }
-}
+  }
 }
