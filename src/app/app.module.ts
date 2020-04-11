@@ -1,3 +1,4 @@
+import { SharedModule } from '@shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +10,7 @@ import { SideNavComponent } from './layout/side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
+import { ErrorPageComponent } from './layout/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
     FooterComponent,
     SideNavComponent,
     ContentLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
