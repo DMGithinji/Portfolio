@@ -8,7 +8,7 @@
     justify-content: center;
     overflow: hidden;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     background: $primary-color;
     @media (min-width: 1200px) {
         .container {
@@ -97,16 +97,12 @@
 
     .auth-side-img {
 
-        padding-right: 400px;
+        padding-left: 400px;
         position: absolute;
         width: 100%;
         top: 0;
-        left: 0;
-        justify-content: center;
-        .img-shift{
-            margin-left: -90px;
-            max-width: 105% !important;
-        }        
+        right: 0;
+        justify-content: center;      
         @media only screen and (max-width: 991px) {
             display: none;
         }
@@ -114,12 +110,14 @@
 
     .auth-side-form {
         position: relative;
+        margin-top: -28px;
+        margin-left: 20px;
         min-height: 100%;
         background: #fff;
         display: inline-flex;
         align-items: center;
         left: auto;
-        float: right;
+        float: left;
 
         > * {
             position: relative;
@@ -128,7 +126,7 @@
         @media only screen and (max-width: 991px) {
             width: 100%;
             justify-content: center;
-
+            margin: 0px;
             .auth-content:not(.container) {
                 max-width: 350px;
             }
