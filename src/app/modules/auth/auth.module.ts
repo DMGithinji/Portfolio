@@ -4,10 +4,12 @@ import { LoginComponent } from './page/login/login.component';
 import { SharedModule } from '@shared/shared.module';
 
 import { AuthRoutingModule } from './auth.routing';
+import { ResetPasswordComponent } from './page/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
-    LoginComponent, 
+    LoginComponent,
+    ResetPasswordComponent, 
   ],
   imports: [
     CommonModule,    
