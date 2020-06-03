@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MyErrorStateMatcher } from '@shared/_helpers/error-state-matcher.matcher';
+import { AuthService } from 'app/data/service/auth.service';
+
+import { first } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +15,12 @@ import { MyErrorStateMatcher } from '@shared/_helpers/error-state-matcher.matche
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   matcher = new MyErrorStateMatcher();
+  loading = false;  // loader while awaiting response
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private _auth: AuthService,
+    private _router: Router,
   ) { }
 
   ngOnInit() {
@@ -35,7 +42,20 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     }
-    console.log(this.loginForm.value);
-  }
-
+    this.loading = true;
+    this._auth
+      .login(this.loginForm.value)
+      .pipe(first())
+      .subscribe(
+        (data) => {
+          console.log("Login data-", data);
+          this.loading = false;
+          // this._router.navigate(['/dashboard']);
+        },
+        (error) => {
+          this.loading = false;
+          console.log("Login Error-", error);
+        }
+      );
+    }
 }

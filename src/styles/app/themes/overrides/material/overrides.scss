@@ -10,6 +10,11 @@
     height: 42px;
 }
 
+/* SPINNER OVERRIDE */
+mat-spinner {
+    height: 100% !important;
+}
+
 /* FORM FIELDS */
 // All field inputs to be 100% width
 mat-form-field {
