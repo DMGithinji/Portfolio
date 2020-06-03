@@ -27,13 +27,13 @@ export class AuthService {
   }
 
   signUp(userDetails) {
-    return this.http.post<any>(`${environment.apiUrl}/auth/register/`, userDetails);
+    return this.http.post<any>(`${this.apiUrl}/auth/register/`, userDetails);
   }
 
   logout(userId) {
     localStorage.removeItem('currentUser');
     localStorage.clear();
-    return this.http.post<any>(`${environment.apiUrl}/auth/logout/${userId}`, userId);
+    return this.http.post<any>(`${this.apiUrl}/auth/logout/${userId}`, userId);
   }
 
 

@@ -45,15 +45,17 @@ export class SignupComponent implements OnInit {
     if (this.signupForm.invalid) {
       return;
     }
-    console.log("Form - ", this.signupForm.value);
     this.loading = true;
+  
+    delete this.signupForm.value['password2']
+    console.log("Form - ", this.signupForm.value);
     this._auth.signUp(this.signupForm.value)
       .pipe(first())
       .subscribe(
         (data) => {
           console.log("Signup data-", data);
           this.loading = false;
-          // this._router.navigate(['/dashboard']);
+          this._router.navigate(['/dashboard']);
         },
         (error) => {
           this.loading = false;

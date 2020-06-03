@@ -1,6 +1,6 @@
-<div class="auth-wrapper align-items-stretch aut-bg-img">
-    <div class="flex-grow-1 mt-4">
-        <div class="auth-side-form">
+<div class="auth-wrapper">
+    <div class="row h-100">
+        <div class="col-lg-4 d-flex align-items-center auth-side-form">
             <div [ngSwitch]="form">
                 <div *ngSwitchCase="'login'">
                     <app-login></app-login>
@@ -17,12 +17,12 @@
             </div>
         </div>
 
-        <div class="h-100 d-md-flex align-items-center auth-side-img">
-            <div class="col-sm-10 auth-content w-auto">
+        <div class="col-lg-8 d-flex justify-content-center align-items-center">
+            <div class="w-100 auth-side-img">
                 <h5 class="font-weight-normal pl-5 text-center">Enhance the Restaurant Experience for your Beloved
                     Customers.
                 </h5>
-                <img src="assets/images/auth/appbackground.webp" alt="FoodiesAppImage_Not_Loaded" class="img-fluid">
+                <img src="assets/images/auth/appbackground.webp" alt="FoodiesAppImage" class="img-fluid">
 
             </div>
         </div>

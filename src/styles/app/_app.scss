@@ -26,4 +26,5 @@
 @include mat-core();
 
 // pages
+@import "themes/pages/_layout";
 @import "themes/pages/authentication";

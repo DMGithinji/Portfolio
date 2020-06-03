@@ -2,110 +2,30 @@
     Authentication css start
 ==========================  **/
 .auth-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    min-width: 100%;
-    min-height: calc(100vh - 65px);
-    background: $primary-color;
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1140px;
+    overflow-y: hidden;
+    height: calc(100vh - 75px);
+    padding: 0 60px;
+
+    .auth-side-form {
+        background-color: #fff;
+        h4 {
+            margin-bottom: 30px;
+            font-weight: 500;
+            color: #212529;
         }
-    }
-    @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        display: block;
-        margin: 0 auto;
-
-        > .row {
-            min-height: 100vh;
-
-            > .aut-bg-img {
-                min-height: 100vh;
-            }
-        }
-    }
-
-    a,
-    p > a {
-        color: $theme-heading-color;
-        font-weight: 500;
-        text-decoration: underline;
-    }
-
-    .auth-content {
-        position: relative;
-        padding: 15px;
-        z-index: 5;
-
-        &:not(.container) {
-            width: 400px;
-
-            .card-body {
-                padding: 40px 35px;
-            }
-        }
-        @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-            margin: 0 auto;
+        @media (max-width: 1000px) {
+            margin-top: 20px;
+            overflow-y: scroll;
         }
     }
 
     .auth-side-img {
-
-        padding-left: 400px;
-        position: absolute;
         width: 100%;
-        top: 0;
-        right: 0;
-        justify-content: center;      
-        @media only screen and (max-width: 991px) {
-            display: none;
-        }
-    }
-
-    .auth-side-form {
-        position: relative;
-        margin-top: -28px;
-        margin-left: 20px;
-        min-height: 100%;
-        background: #fff;
-        display: inline-flex;
-        align-items: center;
-        left: auto;
-        float: left;
-
-        > * {
-            position: relative;
-            z-index: 5;
-        }
-        @media only screen and (max-width: 991px) {
-            width: 100%;
-            justify-content: center;
-            margin: 0px;
-            .auth-content:not(.container) {
-                max-width: 350px;
-            }
-        }
-    }
-
-    &.aut-bg-img {
-        .auth-side-form {
-            @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-                height: 100vh;
-            }
+        padding-left: 100px;
+        @media (max-width: 1000px) {
+            display: none;;
         }
     }
 
 }
-/* image varient start */
-.aut-bg-img {
-    background-color: #fff;
-
-    .auth-content {
-        padding: 70px 40px;
-    }
-}
-/* image varient End */
 /**====== Authentication css end ======**/

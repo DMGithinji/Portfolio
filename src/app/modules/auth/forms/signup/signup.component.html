@@ -1,42 +1,40 @@
 <div class="auth-side-form">
-    <div class=" auth-content">
-        <h4 class="mb-4 mt-2">Create an account</h4>
+    <h4 class="">Create an account</h4>
 
-        <form [formGroup]="signupForm" (ngSubmit)="register()">
-            <mat-form-field appearance="outline" class="mb-2">
-                <mat-label>Restaurant</mat-label>
-                <input matInput type="text" formControlName="username" [errorStateMatcher]="matcher">
-                <mat-error *ngIf="f.username.hasError('required')">Restaurant is required</mat-error>
-            </mat-form-field>
-            <mat-form-field appearance="outline" class="mb-2">
-                <mat-label>Email</mat-label>
-                <input matInput type="email" formControlName="email" [errorStateMatcher]="matcher">
-                <mat-error *ngIf="f.email.hasError('required')">Email is required</mat-error>
-                <mat-error *ngIf="f.email.hasError('email')">Invalid email</mat-error>
-            </mat-form-field>
-            <mat-form-field appearance="outline" class="mb-2">
-                <mat-label>Password</mat-label>
-                <input matInput type="password" formControlName="password" [errorStateMatcher]="matcher">
-                <mat-error *ngIf="f.password.hasError('required')">Password is required</mat-error>
-            </mat-form-field>
-            <mat-form-field appearance="outline" class="mb-2">
-                <mat-label>Confirm Password</mat-label>
-                <input matInput type="password" formControlName="password2" [errorStateMatcher]="matcher">
-                <mat-error *ngIf="f.password2.hasError('required')">Password is required</mat-error>
-                <mat-error *ngIf="f.password2.hasError('mustMatch')">Passwords need to match</mat-error>
-            </mat-form-field>
-            <button mat-button color="primary" class="w-100 btn btn-primary text-white mat-btn-100">
-                <span *ngIf='!loading'>Sign Up</span>
-                <div *ngIf='loading'>
-                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                    Signing up...
-                </div>
-            </button>
-        </form>
+    <form [formGroup]="signupForm" (ngSubmit)="register()">
+        <mat-form-field appearance="outline" class="mb-2">
+            <mat-label>Restaurant</mat-label>
+            <input matInput type="text" formControlName="username" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="f.username.hasError('required')">Restaurant is required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="mb-2">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="f.email.hasError('required')">Email is required</mat-error>
+            <mat-error *ngIf="f.email.hasError('email')">Invalid email</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="mb-2">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="f.password.hasError('required')">Password is required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="mb-2">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password" formControlName="password2" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="f.password2.hasError('required')">Password is required</mat-error>
+            <mat-error *ngIf="f.password2.hasError('mustMatch')">Passwords need to match</mat-error>
+        </mat-form-field>
+        <button mat-button color="primary" class="w-100 btn btn-primary text-white mat-btn-100">
+            <span *ngIf='!loading'>Sign Up</span>
+            <div *ngIf='loading'>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Signing up...
+            </div>
+        </button>
+    </form>
 
-        <div class="text-center mt-4">
-            <p class="text-muted">Already have an account?&nbsp;<a [routerLink]="['/auth/login']"
-                    class="text-primary">Login</a></p>
-        </div>
+    <div class="text-center mt-4">
+        <p class="text-muted">Already have an account?&nbsp;<a [routerLink]="['/auth/login']"
+                class="text-primary">Login</a></p>
     </div>
 </div>
