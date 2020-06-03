@@ -16,10 +16,12 @@
 @import "themes/font/datta-icon";
 @import "themes/font/feather";
 @import "themes/font/fontawesome";
-@import "themes/font/cryptofont";
+@import "themes/font/datta-icon";
+
+@import "themes/font/datta-icon";
 
 // theme layouts
-@import "themes/layouts/menu-lite";
+@import "themes/overrides/material/overrides";
 @import '~@angular/material/theming';
 @include mat-core();
 

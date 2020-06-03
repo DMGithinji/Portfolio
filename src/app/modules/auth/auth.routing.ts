@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './page/login/login.component';
-import { ResetPasswordComponent } from './page/reset-password/reset-password.component';
+import { AuthPageComponent } from './authpage/auth-page.component';
 
 const routes: Routes = [
       {
         path: 'login',
-        component: LoginComponent
+        component: AuthPageComponent
+      },
+      {
+        path: 'register',
+        component: AuthPageComponent
       },
       {
         path: 'reset-password',
-        component: ResetPasswordComponent
+        component: AuthPageComponent
       },
 ];
 

@@ -4,9 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { NoAuthGuard } from '@app/guard/no-auth.guard';
 import { AuthGuard } from '@app/guard/auth.guard';
 
-import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
-import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
-import { ErrorPageComponent } from './layout/error-page/error-page.component';
+import { AuthComponent } from './layout/auth/auth.component';
+import { ErrorsComponent } from './layout/errors/errors.component';
+import { ContentComponent } from './layout/content/content.component';
 
 // The application modules paths
 const restaurantRoutes: Routes = [
@@ -29,7 +29,7 @@ const routes: Routes = [
   // Handles layout for rendering the different application modules on signin
   {
     path: '',
-    component: ContentLayoutComponent,
+    component: ContentComponent,
     // canActivate: [AuthGuard],
     children: [
       {
@@ -45,13 +45,13 @@ const routes: Routes = [
   // Handles signin, signup and forgot password
   {
     path: 'auth',
-    component: AuthLayoutComponent,
+    component: AuthComponent,
     loadChildren: () => import('@modules/auth/auth.module').then(m => m.AuthModule)
   },
   // Handles errors such as 404 or 500
   {
     path: 'error',
-    component: ErrorPageComponent,
+    component: ErrorsComponent,
     loadChildren: () => import('@modules/error/error.module').then(m => m.ErrorModule)
   },
   // Fallback when no prior routes is matched
