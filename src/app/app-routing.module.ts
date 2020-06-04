@@ -1,29 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { NoAuthGuard } from '@app/guard/no-auth.guard';
-import { AuthGuard } from '@app/guard/auth.guard';
-
-import { AuthComponent } from './layout/auth/auth.component';
-import { ErrorsComponent } from './layout/errors/errors.component';
 import { ContentComponent } from './layout/content/content.component';
 
-// The application modules paths
-const restaurantRoutes: Routes = [
-    {
-      path: 'dashboard',
-      loadChildren: () =>  import('@modules/dashboard/dashboard.module').then(m => m.DashboardModule)
-    },
-    {
-      path: 'profile',
-      loadChildren: () =>  import('@modules/profile/profile.module').then(m => m.ProfileModule)
-    },
-]
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/auth/login',
+    redirectTo: '/',
     pathMatch: 'full'
   },
   // Handles layout for rendering the different application modules on signin
@@ -33,29 +16,18 @@ const routes: Routes = [
     // canActivate: [AuthGuard],
     children: [
       {
-        path: 'dashboard',
-        loadChildren: () =>  import('@modules/dashboard/dashboard.module').then(m => m.DashboardModule)
+        path: '',
+        loadChildren: () =>  import('@modules/home/home.module').then(m => m.HomeModule)
       },
       {
-        path: 'profile',
-        loadChildren: () =>  import('@modules/profile/profile.module').then(m => m.ProfileModule)
+        path: 'project',
+        loadChildren: () => import('@modules/project/project.module').then(m => m.ProjectModule)
       },
     ]
   },
-  // Handles signin, signup and forgot password
-  {
-    path: 'auth',
-    component: AuthComponent,
-    loadChildren: () => import('@modules/auth/auth.module').then(m => m.AuthModule)
-  },
-  // Handles errors such as 404 or 500
-  {
-    path: 'error',
-    component: ErrorsComponent,
-    loadChildren: () => import('@modules/error/error.module').then(m => m.ErrorModule)
-  },
+
   // Fallback when no prior routes is matched
-  { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }
+  { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({

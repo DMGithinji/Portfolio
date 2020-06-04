@@ -1,1 +1,46 @@
-<p>sidenav works!</p>
+<div [ngClass]="{offcanvas: navActive}">
+    <a class="js-colorlib-nav-toggle colorlib-nav-toggle" (click)="navOn()" [ngClass]="{active: navActive}"
+        data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+    <aside id="colorlib-aside" [ngClass]="{offcanvas: navActive}" role="complementary">
+        <div class="text-center">
+            <div class="author-img" style="background-image: url(./assets/images/Denis_Githinji.jpg);"></div>
+            <h1 id="colorlib-logo"><a href="index.html">Denis Githinji</a></h1>
+            <span class="position">Fullstack Software Developer</span>
+        </div>
+        <nav id="colorlib-main-menu" role="navigation" class="navbar">
+            <div id="navbar" class="collapse">
+                <ul>
+                    <li (click)="scrollTo('section1')" [ngClass]="{ 'active': currentSection == 'section1' }">
+                        <span data-nav-section="home">Home</span></li>
+                    <li (click)="scrollTo('section2')" [ngClass]="{ 'active': currentSection == 'section2' }">
+                        <span data-nav-section="about">About</span></li>
+                    <li (click)="scrollTo('section3')" [ngClass]="{ 'active': currentSection == 'section3' }">
+                        <span data-nav-section="work">Projects</span></li>
+                    <li (click)="scrollTo('section4')" [ngClass]="{ 'active': currentSection == 'section4' }">
+                        <span data-nav-section="services">Skills</span></li>
+                    <li (click)="scrollTo('section5')" [ngClass]="{ 'active': currentSection == 'section5' }"><span
+                            data-nav-section="education">Education</span></li>
+                    <li (click)="scrollTo('section6')" [ngClass]="{ 'active': currentSection == 'section6' }">
+                        <span data-nav-section="experience">Previous Experiences</span></li>
+
+                    <!-- <li (click)="scrollTo('section7')" [ngClass]="{ 'active': currentSection === 'section7' }" ><a href="#" data-nav-section="contact">Contact</a></li> -->
+                </ul>
+
+                <div class="text-center contact-social-icons">
+                    <ul class="d-flex justify-content-center">
+                        <a href="mailto:dmwaigithinji@gmail.com" class="m-2">
+                            <li><i class="fa fa-envelope"></i> </li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/denis-githinji" class="m-2">
+                            <li><i class="fa fa-linkedin-square"></i> </li>
+                        </a>
+                        <a href="https://github.com/DMGithinji" class="m-2">
+                            <li><i class="fa fa-github"></i> </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </aside>
+</div>

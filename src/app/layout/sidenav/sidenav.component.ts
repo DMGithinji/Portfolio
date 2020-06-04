@@ -5,11 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss']
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent {
 
-  constructor() { }
+  title = 'DMG-Portfolio';
+  currentSection: string = 'section1';
+  navActive: boolean = false;
 
-  ngOnInit(): void {
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
   }
 
+  scrollTo(section) {
+    document.querySelector('#' + section)
+      .scrollIntoView();
+    this.navActive = false;
+  }
+
+  navOn() {
+    this.navActive = !this.navActive;
+  }
 }

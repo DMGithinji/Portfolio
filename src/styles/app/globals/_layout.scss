@@ -1,0 +1,79 @@
+$blue: #2c98f0;
+$darkest-blue: rgb(107, 108, 187);
+$light: #f2f3f7;;
+$dark-blue:rgb(95, 153, 192);
+$darker-blue: rgb(77, 79, 100);
+
+
+.portfolio-main {
+  width: calc(100% - 290px);
+  float: right;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.section-content {
+    padding-top: 4em;
+    padding-bottom: 6.5em;
+    clear: both;
+    margin-left: 0px;
+    display: block;
+    padding-left: 30px;
+    @media screen and (max-width: 768px) {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+    @media screen and (max-width: 768px) {
+    .section-content {
+        padding-top: 5em;
+        padding-bottom: 7em;
+    }
+
+    .heading {
+        font-size: 18px;
+        margin-bottom: 4em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.8;
+        position: relative;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 3em;
+        }
+        span {
+            display: block;
+        }
+    }
+
+    h2::after {
+        background: $blue;
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        bottom: -20px;
+        width: 100px;
+    }
+
+    .narrow-content {
+        padding: 0 2.5em;
+        @media screen and (max-width: 768px) {
+            padding: 1em;
+        }
+    }
+
+
+}
+
+
+/*----------------------------*/
