@@ -6,6 +6,8 @@ mat-expansion-panel {
 .mat-expansion-panel-header {
   background-color: #f6f6f6 !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  height: auto !important;
+  padding: 15px 20px !important;
   @media screen and (max-width: 992px) {
    height: auto !important;
    padding: 5px 20px !important;

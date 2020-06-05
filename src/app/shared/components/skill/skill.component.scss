@@ -1,4 +1,40 @@
 
 .card {
-    border-color: #2C98F0;
+    border-color: rgb(57, 159, 243);
+    height: 80px;
+    width: 90%;
+    padding: 5px 8px !important;
+    @media screen and (max-width: 1000px) {
+        height: 90px;
+        margin-right: 10px !important;
+    }
 }
+
+.techstack {
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+
+img {
+    height: 68px;
+    width: auto;
+    @media screen and (max-width: 1000px) {
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;    }
+}
+
+    p {
+        text-align: right;
+        font-size: 15px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 13px;
+            text-align: center;
+        }
+    }

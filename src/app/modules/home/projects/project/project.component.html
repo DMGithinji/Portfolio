@@ -1,19 +1,17 @@
 <div class="project-img-container">
     <div class="project-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/HDRI_Sample_Scene_Balls_%28JPEG-HDR%29.jpg">
+        <img class="shadow" src="{{ project?.imagePath }}">
     </div>
-    <div class="on-hover">
+    <div class="on-hover shadow">
         <div class="on-hover-bubble">
-            <span class="on-hover-title">Project Title</span>
-            <p>This is a description truncated at 150 words...</p>
+            <span class="on-hover-title">{{ project?.title }}</span>
+            <p>{{ project?.description }}</p>
         </div>
     </div>
 </div>
 
-<h3>Project Title</h3>
-<p>Project description summary</p>
-<div class="tech-tags">
-    <span class="badge">
-        Badge
-    </span>
+<h3>{{ project?.title }}</h3>
+<p class="pr-3">{{ project?.summary }}</p>
+<div class="tech-tags" *ngFor="let tag of project?.tags">
+    <span class="badge"> {{ tag }} </span>
 </div>
