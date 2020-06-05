@@ -8,11 +8,13 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SharedModule } from '@shared/shared.module';
 import { ProjectComponent } from './projects/project/project.component';
+import { EducationComponent } from './education/education.component';
+import { PreviouslyComponent } from './previously/previously.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeroComponent, AboutComponent, ProjectsComponent, SkillsComponent, ProjectComponent],
+  declarations: [HomeComponent, HeroComponent, AboutComponent, ProjectsComponent, SkillsComponent, ProjectComponent, EducationComponent, PreviouslyComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

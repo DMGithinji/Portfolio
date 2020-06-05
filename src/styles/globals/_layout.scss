@@ -5,6 +5,15 @@ $dark-blue:rgb(95, 153, 192);
 $darker-blue: rgb(77, 79, 100);
 
 
+.cursor {
+    cursor: pointer;
+}
+
+.accent-background {
+    background-color: #F6F6F6 !important;
+}
+
+
 .portfolio-main {
   width: calc(100% - 290px);
   float: right;
@@ -19,6 +28,8 @@ $darker-blue: rgb(77, 79, 100);
   }
 }
 
+
+
 .section-content {
     padding-top: 4em;
     padding-bottom: 6.5em;
@@ -26,8 +37,9 @@ $darker-blue: rgb(77, 79, 100);
     margin-left: 0px;
     display: block;
     padding-left: -40px;
+    margin-left: -10px;
     @media screen and (max-width: 768px) {
-        padding: 5em 0 0 0;
+        padding: 5em 0 3em 0;
         margin: 0 7em 0 0;
         width: 100%;
     }
@@ -56,8 +68,9 @@ $darker-blue: rgb(77, 79, 100);
     }
 
     h6 {
-        font-size: 12px;
-        letter-spacing: 2px;
+        font-size: 10px;
+        letter-spacing: 4px;
+        margin-bottom: 18px;
         color: #999999;
     }
 }

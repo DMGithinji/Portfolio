@@ -1,0 +1,68 @@
+
+h3 {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+.project-img-container 
+{
+    width: 100%;  
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    transition: all 0.2s linear;
+}
+
+/* Make the image round */
+.project-img img {
+    height: 200px;
+    border-radius: 8px;
+}
+
+.on-hover {
+    position: absolute;
+    top: 0;
+    width: 100%;  
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    cursor: default;
+    transition: opacity 0.2s linear;
+    &:hover {
+        opacity: 1;
+    }
+    .on-hover-bubble {
+        background: rgba(78, 78, 78, 1);
+        border-radius: 8px;
+        position: relative;
+        box-sizing: border-box;
+        top: 0; left: 0; right: 100%;
+        height: 200px;
+        padding: 18px;
+        overflow: hidden;
+        word-wrap: break-word;
+        .on-hover-title{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #fff;
+            font-size: 13px;
+        }
+        .tech-tags {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
