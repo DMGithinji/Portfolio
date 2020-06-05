@@ -25,21 +25,14 @@ $darker-blue: rgb(77, 79, 100);
     clear: both;
     margin-left: 0px;
     display: block;
-    padding-left: 30px;
+    padding-left: -40px;
     @media screen and (max-width: 768px) {
-        padding: 0px;
-        margin: 0px;
+        padding: 5em 0 0 0;
+        margin: 0 7em 0 0;
         width: 100%;
     }
-}
 
-    @media screen and (max-width: 768px) {
-    .section-content {
-        padding-top: 5em;
-        padding-bottom: 7em;
-    }
-
-    .heading {
+    h2 {
         font-size: 18px;
         margin-bottom: 4em;
         font-weight: 600;
@@ -50,20 +43,28 @@ $darker-blue: rgb(77, 79, 100);
         @media screen and (max-width: 768px) {
             margin-bottom: 3em;
         }
-        span {
-            display: block;
+
+        &::after {
+            background: $blue;
+            content: '';
+            height: 2px;
+            left: 0;
+            position: absolute;
+            bottom: -20px;
+            width: 100px;
         }
     }
 
-    h2::after {
-        background: $blue;
-        content: '';
-        height: 2px;
-        left: 0;
-        position: absolute;
-        bottom: -20px;
-        width: 100px;
+    h6 {
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #999999;
     }
+}
+
+
+
+
 
     .narrow-content {
         padding: 0 2.5em;
@@ -72,8 +73,6 @@ $darker-blue: rgb(77, 79, 100);
         }
     }
 
-
-}
 
 
 /*----------------------------*/

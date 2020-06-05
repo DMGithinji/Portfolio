@@ -3,7 +3,6 @@
 // main framework
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
-@import "globals/theme-variables";
 
 // bootstrap
 @import "~bootstrap/scss/bootstrap";
@@ -11,5 +10,6 @@
 @import '~@angular/material/theming';
 @include mat-core();
 
+@import "globals/theme";
 @import "globals/layout";
 
