@@ -13,7 +13,12 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.project);
   }
 
+  public setStyles(project): any {
+    let styles = {
+      'background': project.theme
+    };
+    return styles;
+  }
 }

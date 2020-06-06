@@ -1,17 +1,22 @@
-<div class="project-img-container">
+<div class="project-img-container ">
     <div class="project-img">
         <img class="shadow" src="{{ project?.imagePath }}">
     </div>
-    <div class="on-hover shadow">
-        <div class="on-hover-bubble">
-            <span class="on-hover-title">{{ project?.title }}</span>
+    <div class="on-hover shadow" >
+        <div class="on-hover-bubble" [ngStyle]="setStyles(project)">
+            <span class="on-hover-title">{{ project?.title | uppercase }}</span>
             <p>{{ project?.description }}</p>
+            <a class="badge link-badge" *ngIf="!!project.liveLink" href="{{ project.liveLink }}" target="_blank"> Link <i class="fa fa-link"></i> </a>
+            <a class="badge link-badge" *ngIf="!!project.githubLink" href="{{ project.githubLink }}" target="_blank"> Code <i class="fa fa-github"></i></a>
+            <a class="badge link-badge" *ngIf="!!project.caseStudyUrl" [routerLink] = "[project.caseStudyUrl]"> Overview <i class="fa fa-arrow-circle-right"></i> </a>
         </div>
     </div>
 </div>
 
 <h3>{{ project?.title }}</h3>
 <p class="pr-3">{{ project?.summary }}</p>
-<div class="tech-tags" *ngFor="let tag of project?.tags">
-    <span class="badge"> {{ tag }} </span>
+<div class="d-flex flex-wrap">
+<div *ngFor="let tag of project?.tags">
+        <span class="badge" [ngStyle]="setStyles(project)"> {{ tag }} </span>
+</div>
 </div>
