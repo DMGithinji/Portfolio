@@ -31,7 +31,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.7",
+    "@angular-devkit/build-angular": "~15.0.4",
     "@angular/cli": "^9.1.7",
     "@angular/compiler-cli": "~9.1.9",
     "@angular/language-service": "~9.1.9",
@@ -48,13 +48,13 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "node-sass": "^4.13.1",
     "protractor": "~5.4.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^13.2.0",
     "standard-version": "^7.1.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "3.6.5",
-    "webpack": "^4.42.1"
+    "webpack": "^5.75.0"
   },
   "release": "standard-version && git push — follow-tags origin master && npm publish",
   "husky": {
